@@ -1,4 +1,4 @@
-﻿@page
+﻿@page 
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
@@ -7,6 +7,7 @@
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    <button type="button" class="btn btn-cta"><a asp-page="/PropertyListings">Go to Listings</a></button>
-    <button type="button" class="btn btn-cta"><a asp-page="/AccountDetails">Go to Account</a></button>
+    <a asp-page="/AccountDetails/AccountDetails" class="btn btn-cta">Go to Account</a>
+    <a asp-page="/PropertyListings/PropertyListings" class="btn btn-cta">Go to Listings</a>
+
 </div>
