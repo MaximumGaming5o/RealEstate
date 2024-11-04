@@ -16,5 +16,10 @@ namespace RealEstate.Pages
         {
 
         }
+
+        public IActionResult OnPost()
+        {
+            return RedirectToPage("PropertyListings");
+        }
     }
 }
