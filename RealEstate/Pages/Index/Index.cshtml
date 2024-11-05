@@ -1,6 +1,7 @@
-﻿@page "/Home"
-@model RealEstateListing.Pages.HomeModel
+﻿@page
+@model IndexModel
 @{
+    ViewData["Title"] = "Home page";
 }
 
 <div class="hero-section" style="background-color: #001F3F; color: white; padding: 100px 0;">
@@ -30,7 +31,7 @@
     </div>
 </div>
 
-<div class="container mt-5">
+<div class="mt-5 container">
     <h2 style="color: #001F3F">Featured Properties</h2>
     <div class="row mt-4">
         @for (int i = 0; i < 3; i++)
