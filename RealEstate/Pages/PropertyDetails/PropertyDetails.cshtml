@@ -1,0 +1,69 @@
+﻿@page "/PropertyDetails"
+@model RealEstateListing.Pages.PropertyDetailsModel
+@{
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <!-- Property Images -->
+        <div class="col-md-8">
+            <div class="card">
+                <img src="placeholder.jpg" class="card-img-top" alt="Property">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="thumbnail1.jpg" class="img-thumbnail">
+                        </div>
+                        <!-- Add more thumbnails -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Property Info -->
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3 style="color: #001F3F">$499,000</h3>
+                    <h5 style="color: #1B446F">Modern Family Home</h5>
+                    <p class="text-muted">123 Main St, City, State</p>
+                    
+                    <hr>
+                    
+                    <div class="property-details">
+                        <p><strong>Bedrooms:</strong> 3</p>
+                        <p><strong>Bathrooms:</strong> 2</p>
+                        <p><strong>Square Feet:</strong> 2,100</p>
+                        <p><strong>Year Built:</strong> 2020</p>
+                    </div>
+
+                    <button class="btn w-100 mb-2" style="background-color: #001F3F; color: white">
+                        Contact Agent
+                    </button>
+                    <button class="btn w-100" style="background-color: #4F769F; color: white">
+                        Schedule Viewing
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Property Description -->
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <h4 style="color: #001F3F">Description</h4>
+                    <p>Detailed property description goes here...</p>
+                    
+                    <h4 style="color: #001F3F" class="mt-4">Features</h4>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Feature 1</li>
+                        <li class="list-group-item">Feature 2</li>
+                        <li class="list-group-item">Feature 3</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

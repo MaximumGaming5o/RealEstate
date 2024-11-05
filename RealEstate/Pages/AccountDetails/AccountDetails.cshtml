@@ -42,9 +42,9 @@
         clear: both;
     }
     
-    img {
+    .border {
         border-style: solid;
-        border-radius: 80%;
+        border-radius: 12px;
     }
 
 </style>
@@ -53,16 +53,16 @@
 
 <div class="row">
     <div class="column left" style="border-right-style: solid; border-color: grey">
-        <div class="row" style="height: 100px">  
+        <div class="row" style="height: 100px;">  
             <div class="column l2">
-                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="Avatar" style="width:100px">
+                <img class="border" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="Avatar" style="width:100px">
             </div>
             <div class="column r2" style="padding-left: 10px">
                 <h1>Welcome to Group7Estates, Jane Doe!</h1>
             </div>
             </div>
         
-        <div class="row">
+        <div class="row" style="padding-top: 30px">
             <div class="row">
                 <div class="formCol">
                     <p>First Name</p>
@@ -106,10 +106,17 @@
                     <input type="date"/>
                 </div>
             </div>
+            <div class="row">
+                <div class="formCol" style="padding-top: 25px">
+                    <button style="background-color: #1B446F; color: white; border-radius: 8px;">Save</button>
+                </div>
+                
+            </div>
         </div>
     </div>
     <div class="column right" style="padding-left: 20px">
-        <h2>Column 2</h2>
-        <p>Some text..</p>
+        <h2 style="text-align: center; padding-top: 10px">Membership</h2>
+        <h4 style="padding-top: 20px">Current Level:</h4>
+        <img src="https://i.ebayimg.com/images/g/VFcAAOxyJX9SKbxA/s-l400.jpg" style="width: 200px"/>
     </div>
 </div>
