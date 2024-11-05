@@ -20,21 +20,28 @@
             <h1 style="color: #fbfbfe">Group7Estates.ca</h1>
         </div>
     </nav>
-
+    
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow">
         <div class="container">
-            <a class="navbar-brand" asp-area="" asp-page="/Index/Index">Home</a>
-            <a class="navbar-brand" asp-area="" asp-page="/PropertyListings/PropertyListings">Properties</a>
-            <a class="navbar-brand" asp-area="" asp-page="/">Sell</a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="navbar-collapse d-sm-inline-flex justify-content-between collapse">
+            <!-- Left side nav items -->
+            <div class="navbar-nav me-auto">
+                <a class="navbar-brand" asp-area="" asp-page="/Home/Home">Home</a>
+                <a class="navbar-brand" asp-area="" asp-page="/">Sell</a>
+                <a class="navbar-brand" asp-area="" asp-page="/PropertyListings/PropertyListings">Properties Listings</a>
+                <a class="navbar-brand" asp-area="" asp-page="/PropertyDetails/PropertyDetails">Properties Details</a>
             </div>
 
+            <!-- Right side nav items -->
+            <div class="navbar-nav ms-auto">
+                <a class="navbar-brand" asp-area="" asp-page="/Login/Login">Login</a>
+                <a class="navbar-brand" asp-area="" asp-page="/AccountDetails/AccountDetails">Account Details</a>
+            </div>
+
+            <!-- Mobile toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" 
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
     </nav>
 

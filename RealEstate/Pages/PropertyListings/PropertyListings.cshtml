@@ -1,9 +1,58 @@
-﻿@page
+﻿@page 
 @model RealEstate.Pages.PropertyListingsModel
 @{
 }
 
 
-<div class="text-center">
-    <h1 class="display-4">Property Listing Page</h1>
+<div class="container mt-4">
+    <div class="row">
+        <!-- Filters Sidebar -->
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 style="color: #001F3F">Filters</h5>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Price Range</label>
+                            <input type="range" class="form-range">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Property Type</label>
+                            <select class="form-select">
+                                <option>All Types</option>
+                                <option>House</option>
+                                <option>Apartment</option>
+                                <option>Commercial</option>
+                            </select>
+                        </div>
+                        <button class="btn w-100" style="background-color: #1B446F; color: white" >
+                            Apply Filters
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Property List -->
+        <div class="col-md-9">
+            <div class="row">
+                @for (int i = 0; i < 6; i++)
+                {
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <img src="placeholder.jpg" class="card-img-top" alt="Property">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: #1B446F">Property Title</h5>
+                                <p class="card-text">$350,000</p>
+                                <p class="text-muted">2 beds • 2 baths • 1,500 sqft</p>
+                                <a href="#" class="btn" style="background-color: #4F769F; color: white">
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
 </div>
