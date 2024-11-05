@@ -10,7 +10,8 @@
 </head>
 
 <header>
-    
+
+    @* first nav bar *@
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow" style="background-color: #1B446F; height: 75px">
         <div style="
                     padding-right: var(--bs-gutter-x, 0.75rem);
@@ -20,11 +21,14 @@
             <h1 style="color: #fbfbfe">Group7Estates.ca</h1>
         </div>
     </nav>
-    
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow">
-        <div class="container">
+
+    @* second nav bar *@
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow ">
+        
+        <div class="container-fluid d-flex justify-content-between w-100">
+            
             <!-- Left side nav items -->
-            <div class="navbar-nav me-auto">
+            <div class="navbar-nav">
                 <a class="navbar-brand" asp-area="" asp-page="/Home/Home">Home</a>
                 <a class="navbar-brand" asp-area="" asp-page="/">Sell</a>
                 <a class="navbar-brand" asp-area="" asp-page="/PropertyListings/PropertyListings">Properties Listings</a>
@@ -32,9 +36,9 @@
             </div>
 
             <!-- Right side nav items -->
-            <div class="navbar-nav ms-auto">
-                <a class="navbar-brand" asp-area="" asp-page="/Login/Login">Login</a>
+            <div class="navbar-nav">
                 <a class="navbar-brand" asp-area="" asp-page="/AccountDetails/AccountDetails">Account Details</a>
+                <a class="navbar-brand" asp-area="" asp-page="/Login/Login">Login</a>
             </div>
 
             <!-- Mobile toggle button -->
