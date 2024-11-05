@@ -4,10 +4,49 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    <a asp-page="/AccountDetails/AccountDetails" class="btn btn-cta">Go to Account</a>
-    <a asp-page="/PropertyListings/PropertyListings" class="btn btn-cta">Go to Listings</a>
+<div class="hero-section" style="background-color: #001F3F; color: white; padding: 100px 0;">
+    <div class="container">
+        <h1>Find Your Dream Home</h1>
+        <div class="search-box mt-4">
+            <form class="row g-3">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Location">
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select">
+                        <option>Property Type</option>
+                        <option>House</option>
+                        <option>Apartment</option>
+                        <option>Commercial</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <input type="number" class="form-control" placeholder="Max Price">
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-light w-100">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
+<div class="mt-5 container">
+    <h2 style="color: #001F3F">Featured Properties</h2>
+    <div class="row mt-4">
+        @for (int i = 0; i < 3; i++)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="placeholder.jpg" class="card-img-top" alt="Property">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #1B446F">Modern House</h5>
+                        <p class="card-text">$499,000</p>
+                        <p class="text-muted">3 beds • 2 baths • 2,100 sqft</p>
+                        <a href="#" class="btn" style="background-color: #4F769F; color: white">View Details</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
 </div>
