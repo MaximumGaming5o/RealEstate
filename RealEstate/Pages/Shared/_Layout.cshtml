@@ -12,25 +12,22 @@
 <header>
 
     @* first nav bar *@
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow" style="background-color: #1B446F; height: 75px">
-        <div style="
-                    padding-right: var(--bs-gutter-x, 0.75rem);
-                    padding-left: var(--bs-gutter-x, 0.75rem);
-                    margin-right: auto;
-                    margin-left: 1%;">
-            <h1 style="color: #fbfbfe">Group7Estates.ca</h1>
+    <nav class="bg-primary navbar navbar-expand-sm navbar-dark border-bottom box-shadow bg-custom-blue">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-2" href="#">
+                <h1 class="text-white mb-0 ">Group7Estates.ca</h1>
+            </a>
         </div>
     </nav>
 
     @* second nav bar *@
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow ">
-        
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow text-primary">
         <div class="container-fluid d-flex justify-content-between w-100">
             
             <!-- Left side nav items -->
             <div class="navbar-nav">
-                <a class="navbar-brand" asp-area="" asp-page="/Home/Home">Home</a>
-                <a class="navbar-brand" asp-area="" asp-page="/">Sell</a>
+                <a class="navbar-brand" asp-area="" asp-page="/Index/Index">Home</a>
+                @* <a class="navbar-brand" asp-area="" asp-page="/">Sell</a> *@
                 <a class="navbar-brand" asp-area="" asp-page="/PropertyListings/PropertyListings">Properties Listings</a>
                 <a class="navbar-brand" asp-area="" asp-page="/PropertyDetails/PropertyDetails">Properties Details</a>
             </div>

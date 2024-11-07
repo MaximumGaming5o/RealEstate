@@ -20,3 +20,26 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+:root {
+  /* Color Palette */
+  --text-color: #050315;      /* Dark text */
+  --text-white: #fbfbfb;      /* White text */
+  --bg-color: #fbfbfe;        /* Light background */
+  --primary: #082b50;         /* Primary blue */
+  --secondary: #1B446F;       /* Secondary blue */
+  --accent: #4F769F;          /* Accent blue */
+
+}
+
+/* Utility Classes */
+.bg-primary { background-color: var(--primary) !important; }
+.bg-secondary { background-color: var(--secondary) !important; }
+.bg-accent { background-color: var(--accent) !important; }
+.bg-main { background-color: var(--bg-color) !important; }
+
+.text-primary { color: var(--primary) !important; }
+.text-white { color: var(--text-white) !important; }
+.text-secondary { color: var(--secondary) !important; }
+.text-accent { color: var(--accent) !important; }
+.text-main { color: var(--text-color) !important; }
