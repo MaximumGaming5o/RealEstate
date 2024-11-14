@@ -4,7 +4,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages()
     .AddRazorPagesOptions(options =>
     {
-        options.Conventions.AddPageRoute("/Home/Home", "/Index");
+        options.Conventions.AddPageRoute("/Index/Index", "");
         options.Conventions.AddPageRoute("/AccountDetails/AccountDetails", "AccountDetails");
         options.Conventions.AddPageRoute("/PropertyListings/PropertyListings", "PropertyListings");
         options.Conventions.AddPageRoute("/Error/Error", "Error");
