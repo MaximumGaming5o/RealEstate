@@ -2,65 +2,65 @@
 {
     public class User
     {
-        public int _id;
-        public string _firstName;
-        public string _lastName;
-        public string _email;
-        public string _password;
-        public string _phone;
-        public string _address;
+        private int id;
+        private string firstName;
+        private string lastName;
+        private string email;
+        private string password;
+        private string phone;
+        private string address;
 
-        public int Id
+        public int UserId
         {
-            get { return _id; }
-            set { _id = value; }
+            get { return id; }
+            set { id = value; }
         }
 
         public string FirstName 
         { 
-            get { return _firstName; }
-            set { _firstName = value; } 
+            get { return firstName; }
+            set { firstName = value; } 
         }
 
         public string LastName
         {
-            get { return _lastName; }
-            set { _lastName = value; }
+            get { return lastName; }
+            set { lastName = value; }
         }
 
         public string Email
         {
-            get { return _email; }
-            set { _email = value; }
+            get { return email; }
+            set { email = value; }
         }
 
         public string Password
         {
-            get { return _password; }
-            set { _password = value; }
+            get { return password; }
+            set { password = value; }
         }
 
         public string Phone
         {
-            get { return _phone; }
-            set { _phone = value; }
+            get { return phone; }
+            set { phone = value; }
         }
 
         public string Address
         {
-            get { return _address; }
-            set { _address = value; }
+            get { return address; }
+            set { address = value; }
         }
 
-        public User(int _id, string _firstName, string _lastName, string _email, string _password, string _phone, string _address)
+        public User(int id, string firstName, string lastName, string email, string password, string phone, string address)
         {
-            Id = _id;
-            FirstName = _firstName;
-            LastName = _lastName;
-            Email = _email;
-            Password = _password;
-            Phone = _phone;
-            Address = _address;
+            UserId = id;
+            FirstName = firstName;
+            LastName = lastName;
+            Email = email;
+            Password = password;
+            Phone = phone;
+            Address = address;
         }
     }
 }

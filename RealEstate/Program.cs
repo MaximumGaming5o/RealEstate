@@ -51,6 +51,10 @@ User userNumOne = new User(12345, "Adam", "Zyluk", "adam.zyluk.az@test.com",
     "Password123", "123-456-7890", "123 Test St.");
 
 _userList.Add(userNumOne);
+
+var userCollection = myDB.GetCollection<User>("users");
+
+userCollection.InsertOne(userNumOne);
 #endregion
 
 
