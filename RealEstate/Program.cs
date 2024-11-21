@@ -1,5 +1,6 @@
 using MongoDB.Driver;
 using MongoDB.Bson;
+using RealEstate.Models;
 
 //Create a link to MongoDB
 const string connectionUri = "mongodb+srv://AdamZ:xT83uhvWICmqumdr@realestate.kx91f.mongodb.net/?retryWrites=true&w=majority&appName=RealEstate";
@@ -21,7 +22,7 @@ catch (Exception ex)
 }
 
 //Get the sample database with sample data for testing
-var myDB = mongoClient.GetDatabase("sample_mflix");
+var myDB = mongoClient.GetDatabase("real_estate");
 
 //Create a list of collections on the database
 List<string> GetCollections()
@@ -43,6 +44,14 @@ for (int i = 0; i < GetCollections().Count; i++)
     Console.WriteLine(GetCollections()[i]);
 }
 
+#region UserSystem
+List<User> _userList = new List<User>();
+
+User userNumOne = new User(12345, "Adam", "Zyluk", "adam.zyluk.az@test.com",
+    "Password123", "123-456-7890", "123 Test St.");
+
+_userList.Add(userNumOne);
+#endregion
 
 
 
