@@ -2,57 +2,23 @@
 {
     public class User
     {
-        private int id;
-        private string firstName;
-        private string lastName;
-        private string email;
-        private string password;
-        private string phone;
-        private string address;
+        public int UserId { get; set; }
 
-        public int UserId
-        {
-            get { return id; }
-            set { id = value; }
-        }
+        public string FirstName { get; set; }
 
-        public string FirstName 
-        { 
-            get { return firstName; }
-            set { firstName = value; } 
-        }
+        public string LastName { get; set; }
 
-        public string LastName
-        {
-            get { return lastName; }
-            set { lastName = value; }
-        }
+        public string Email { get; set; }
 
-        public string Email
-        {
-            get { return email; }
-            set { email = value; }
-        }
+        public string Password { get; set; }
 
-        public string Password
-        {
-            get { return password; }
-            set { password = value; }
-        }
+        public string Phone { get; set; }
 
-        public string Phone
-        {
-            get { return phone; }
-            set { phone = value; }
-        }
+        public string Address { get; set; }
 
-        public string Address
-        {
-            get { return address; }
-            set { address = value; }
-        }
+        public UserType UserType { get; set; }
 
-        public User(int id, string firstName, string lastName, string email, string password, string phone, string address)
+        public User(int id, string firstName, string lastName, string email, string password, string phone, string address, UserType userType)
         {
             UserId = id;
             FirstName = firstName;
@@ -61,6 +27,7 @@
             Password = password;
             Phone = phone;
             Address = address;
+            UserType = userType;
         }
     }
 }
