@@ -20,9 +20,9 @@ namespace RealEstateListing.Pages
 
         public IActionResult OnPost()
         {
-            if (Email == "test@test.com" && Password == "password")
+            if (Email == "jane.doe@gmail.com" && Password == "password")
             {
-                return RedirectToPage("/Home/Home");
+                return RedirectToPage("/Index/Index");
             }
 
             return Page();

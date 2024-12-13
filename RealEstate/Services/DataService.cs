@@ -11,10 +11,14 @@ public class DataService
         "mongodb+srv://AdamZ:xT83uhvWICmqumdr@realestate.kx91f.mongodb.net/?retryWrites=true&w=majority&appName=RealEstate";
 
     private readonly MongoClient _mongoClient;
-    private readonly IMongoDatabase? _myDb;
+    private IMongoDatabase? _myDb;
 
     public MongoClientSettings Settings = MongoClientSettings.FromConnectionString(ConnectionUri);
 
+    List<User> _userList = new List<User>();
+
+
+    private IMongoCollection<User> userCollection;
 
     public DataService()
     {
@@ -61,15 +65,24 @@ public class DataService
 
     public void InitUserSystem()
     {
-        var _userList = new List<User>();
+        _userList = new List<User>();
 
         var userNumOne = new User(12345, "Adam", "Zyluk", "adam.zyluk.az@test.com",
             "Password123", "123-456-7890", "123 Test St.", UserType.Seller);
 
         _userList.Add(userNumOne);
 
-        var userCollection = _myDb?.GetCollection<User>("users");
+        userCollection = _myDb?.GetCollection<User>("users");
 
         userCollection?.InsertOne(userNumOne);
+    }
+
+    public User SearchUserByEmail(string email)
+    {
+        User searchedUser = null;
+
+       searchedUser = userCollection.Find(User => User.Email == email).FirstOrDefault();
+
+        return searchedUser;
     }
 }

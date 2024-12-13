@@ -1,4 +1,6 @@
-﻿namespace RealEstate.Models
+﻿using RealEstate.Services;
+
+namespace RealEstate.Models
 {
     public class User
     {
@@ -30,4 +32,6 @@
             UserType = userType;
         }
     }
+
+    
 }
