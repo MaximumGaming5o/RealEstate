@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This Real Estate Listing Website is a comprehensive platform designed for buying, selling, and managing real estate properties online. Built with ASP.NET, .NET Core, Razor Pages, and C#, this project integrates modern web development frameworks to ensure scalability, security, and performance[1][2].
+This Real Estate Listing Website is a comprehensive platform designed for buying, selling, and managing real estate properties online. Built with ASP.NET, .NET Core, Razor Pages, and C#, this project integrates modern web development frameworks to ensure scalability, security, and performance.
 
 ## Features
 
