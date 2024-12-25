@@ -65,10 +65,3 @@ dataService.InitUserSystem();
 - Florian Kasperbauer (991681092)
 - Adam Zyluk (991646407)
 
-## License
-
-[Add your chosen license here]
-
-Citations:
-[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/33601521/15a5b0df-c0d0-4aba-aea3-acd22baa2289/paste.txt
-[2] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/33601521/15a5b0df-c0d0-4aba-aea3-acd22baa2289/paste.txt
